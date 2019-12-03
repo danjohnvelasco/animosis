@@ -35,16 +35,6 @@ class Admin(User):
     def del_class(self, c_code):
         del g_courses[c_code]
 
-# GLOBAL VARIABLES
-credentials = dict([("dan", "v"), ("admin", "123")]) # list of Users
-users = {"dan": Student("dan", "Dan John", "CCS", "BS CS"), "admin": Admin("admin", "St. Lasalle")}  # login
-g_courses = {
-            "CCPROG1":Course("CCPROG1", "Intro to Computer Programming", 3.0, 20),
-            "CCDSALG":Course("CCDSALG", "Intro to Algorithms", 3.0, 30, ["CCPROG1"]),
-            "CSALGCM": Course("CSALGCM", "CCSDSALG PART 2", 3.0, 30, ["CCDSALG"]),
-            "CCPROG2": Course("CCPROG2", "Programming with Structured Data", 3.0, 20)
-          }
-
 class Course():
     def __init__(self, c_code, c_name, units, limit, prereq=None):
         self.c_code = c_code
@@ -59,6 +49,16 @@ class Course():
             self.c_code, self.c_name, self.units, self.limit, self.enlist_count)
         print(info)
 
+# GLOBAL VARIABLES
+credentials = dict([("dan", "v"), ("admin", "123")]) # list of Users
+users = {"dan": Student("dan", "Dan John", "CCS", "BS CS"), "admin": Admin("admin", "St. Lasalle")}  # login
+g_courses = {
+            "CCPROG1":Course("CCPROG1", "Intro to Computer Programming", 3.0, 20),
+            "CCDSALG":Course("CCDSALG", "Intro to Algorithms", 3.0, 30, ["CCPROG1"]),
+            "CSALGCM": Course("CSALGCM", "CCSDSALG PART 2", 3.0, 30, ["CCDSALG"]),
+            "CCPROG2": Course("CCPROG2", "Programming with Structured Data", 3.0, 20)
+          }
+         
 # Functionalities
 def add_user(username, name, college=None, program=None):
     if college != None:
