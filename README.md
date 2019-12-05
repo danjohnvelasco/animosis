@@ -8,6 +8,7 @@ Features:
  
 Note:
   The app starts with initial data:
+  
     Student Account:
         username: dan
         password: v
