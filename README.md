@@ -2,7 +2,7 @@
 This is my project for COMET as a probationary member.
 
 Features:
-* User register (student/admin)
+* User register and login (student/admin)
 * Student Enlist/Drop
 * Admin Add/Delete Class
  
