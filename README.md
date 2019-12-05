@@ -6,7 +6,6 @@ Features:
   Student Enlist/Drop
   Admin Add/Delete Class
  
-Note:
   The app starts with initial data:
   
     Student Account:
