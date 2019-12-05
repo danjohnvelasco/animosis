@@ -2,9 +2,9 @@
 This is my project for COMET as a probationary member.
 
 Features:
-* User register (student/admin)
-* Student Enlist/Drop
-* Admin Add/Delete Class
+ * User register (student/admin)
+ * Student Enlist/Drop
+ * Admin Add/Delete Class
  
    The app starts with initial data:
 
